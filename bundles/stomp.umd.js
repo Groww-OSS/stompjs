@@ -388,9 +388,9 @@ var Client = /** @class */ (function () {
                                 _this.onWebSocketClose(evt);
                                 // The callback is called before attempting to reconnect, this would allow the client
                                 // to be `deactivated` in the callback.
-                                if (_this._active) {
-                                    _this._schedule_reconnect();
-                                }
+                                // if (this._active) {
+                                //   this._schedule_reconnect();
+                                // }
                             },
                             onWebSocketError: function (evt) {
                                 _this.onWebSocketError(evt);
@@ -2107,7 +2107,7 @@ var WebSocketState;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/kdeepak/MyWork/Tech/stomp/stompjs/src/index.ts */"./src/index.ts");
+module.exports = __webpack_require__(/*! /Users/rajatgupta/Projects/stompjs/src/index.ts */"./src/index.ts");
 
 
 /***/ })

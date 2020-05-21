@@ -255,9 +255,9 @@ var Client = /** @class */ (function () {
                                 _this.onWebSocketClose(evt);
                                 // The callback is called before attempting to reconnect, this would allow the client
                                 // to be `deactivated` in the callback.
-                                if (_this._active) {
-                                    _this._schedule_reconnect();
-                                }
+                                // if (this._active) {
+                                //   this._schedule_reconnect();
+                                // }
                             },
                             onWebSocketError: function (evt) {
                                 _this.onWebSocketError(evt);

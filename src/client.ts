@@ -388,9 +388,9 @@ export class Client {
         this.onWebSocketClose(evt);
         // The callback is called before attempting to reconnect, this would allow the client
         // to be `deactivated` in the callback.
-        if (this._active) {
-          this._schedule_reconnect();
-        }
+        // if (this._active) {
+        //   this._schedule_reconnect();
+        // }
       },
       onWebSocketError: (evt) => {
         this.onWebSocketError(evt);
